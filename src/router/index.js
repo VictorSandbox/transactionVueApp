@@ -1,14 +1,14 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
+import TransactionsCreate from '../pages/transactions/create'
 
 Vue.use(VueRouter)
 
 const routes = [
   {
-    path: '/',
-    name: 'Home',
-    component: Home
+    path: '/transactions/create',
+    name: 'TransactionsCreate',
+    component: TransactionsCreate
   },
   {
     path: '/about',
