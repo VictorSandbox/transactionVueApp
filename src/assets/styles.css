@@ -1,7 +1,6 @@
 body {
   font-family: 'Poppins', sans-serif;
   color: #444;
-  background-color: red;
 }
 
 h1 {
@@ -9,6 +8,12 @@ h1 {
   text-align: center;
   margin: 1.5em 0;
   font-size: 1.6em
+}
+
+.balance {
+background: #cbd5e0;
+text-align: center;
+padding: 5px;
 }
 
 .input-field {
@@ -81,4 +86,13 @@ border-radius: 10px 0 0 10px;
 
 .toggle-switch label:last-of-type {
 border-radius: 0 10px 10px 0;
+}
+
+.transaction {
+display: flex;
+justify-content: space-between;
+  width: 20em;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 20px;
 }

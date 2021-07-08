@@ -1,6 +1,6 @@
 <template>
-  <nav class="flex justify-between align-center bg-blue-900 text-blue-100">
-    <router-link to="/transactions">Transactions</router-link>
+  <nav class="flex justify-around align-center bg-blue-900 text-blue-100">
+    <router-link to="/transactions/">Transactions</router-link>
     <router-link to="/transactions">
       <svg class="h-6 fill-current"
         xmlns="http://www.w3.org/2000/svg"
@@ -13,6 +13,6 @@
         />
       </svg>
     </router-link>
-    <router-link to="/transactions/create">Add1</router-link>
+    <router-link to="/transactions/create">Add</router-link>
   </nav>
 </template>
