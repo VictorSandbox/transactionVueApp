@@ -22,11 +22,11 @@ export default new Vuex.Store({
         console.log(state.transactions.length)
         state.transactions.forEach(transaction => {
           if (transaction.type === "credit") {
-            balance = balance + state.transactions.amount
-            console.log(state.transactions.amount)
+            balance = balance + transaction.amount
+            console.log(transaction.amount)
           } else {
-            balance = balance - state.transactions.amount
-            console.log(state.transactions.amount)
+            balance = balance - transaction.amount
+            console.log(transaction.amount)
           }
         });
       }
@@ -43,6 +43,8 @@ export default new Vuex.Store({
   },
   actions: {
     addTransaction: function(context, transaction) {
+      console.log(transaction);
+      console.log(context);
       context.commit("addTransaction", transaction);
     },
   },

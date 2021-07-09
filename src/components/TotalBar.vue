@@ -1,6 +1,6 @@
 <template>
   <div class="balance">
-    <h1>Account Balance<strong>{{getTotal}}</strong></h1>
+    <h1>Account Balance  <strong>{{formatMoney(getTotal)}}</strong></h1>
   </div>
 </template>
 <script>
